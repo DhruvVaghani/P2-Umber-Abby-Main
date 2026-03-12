@@ -291,7 +291,7 @@ Key fields to notice:
 This response demonstrates the required **approval gate**: the refund is previewed first, but not committed yet.
 
 ### 2. API Output: Approved and Completed
-![Approval JSON Output](Screenshot 2026-03-12 181942.png)
+![Approval JSON Output](api1.png)
 ![Approval JSON Output](Screenshot 2026-03-12 181958.png)
 
 
