@@ -291,8 +291,8 @@ Key fields to notice:
 This response demonstrates the required **approval gate**: the refund is previewed first, but not committed yet.
 
 ### 2. API Output: Approved and Completed
-![Approval JSON Output](screenshots/approval-output.png)
-![Approval JSON Output](screenshots/approval-output.png)
+![Approval JSON Output](Screenshot 2026-03-12 181942.png)
+![Approval JSON Output](Screenshot 2026-03-12 181958.png)
 
 
 The second JSON response shows the graph after `/runs/approve`.
@@ -321,8 +321,8 @@ This response demonstrates the required **interrupt -> resume -> commit** workfl
 ## LangSmith Trace Walkthrough
 
 ### 3. LangSmith Trace: Initial Run Until Approval
-![LangSmith Initial Trace](screenshots/langsmith-trace-start.png)
-![LangSmith Initial Trace](screenshots/langsmith-trace-start.png)
+![LangSmith Initial Trace](Screenshot 2026-03-12 181707.png)
+![LangSmith Initial Trace](Screenshot 2026-03-12 181735.png)
 
 The first LangSmith screenshot shows the run tree for the initial request before approval.
 
