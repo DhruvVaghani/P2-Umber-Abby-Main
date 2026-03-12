@@ -1,0 +1,30 @@
+[
+  {
+    "issue_type": "refund_request",
+    "template": "Hi {{customer_name}}, we are sorry for the inconvenience. We reviewed order {{order_id}} and a refund will be processed shortly."
+  },
+  {
+    "issue_type": "late_delivery",
+    "template": "Hi {{customer_name}}, we checked order {{order_id}}. Your package is in transit and expected to arrive soon. Thank you for your patience."
+  },
+  {
+    "issue_type": "missing_item",
+    "template": "Hi {{customer_name}}, thanks for letting us know. We have escalated order {{order_id}} to locate the missing item."
+  },
+  {
+    "issue_type": "damaged_item",
+    "template": "Hi {{customer_name}}, sorry your item arrived damaged. We will send a replacement for order {{order_id}}."
+  },
+  {
+    "issue_type": "duplicate_charge",
+    "template": "Hi {{customer_name}}, we verified a duplicate charge on order {{order_id}}. We will refund the extra payment promptly."
+  },
+  {
+    "issue_type": "wrong_item",
+    "template": "Hi {{customer_name}}, looks like you received the wrong item for order {{order_id}}. We will arrange a replacement."
+  },
+  {
+    "issue_type": "defective_product",
+    "template": "Hi {{customer_name}}, we are sorry your product is not working. We will honor the warranty for order {{order_id}}."
+  }
+]

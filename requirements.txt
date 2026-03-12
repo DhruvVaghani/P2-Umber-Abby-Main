@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+chromadb
+langgraph
+langgraph-checkpoint-postgres
+psycopg[binary]
+python-dotenv
+openai
+langsmith

@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "refund",
+    "issue_type": "refund_request"
+  },
+  {
+    "keyword": "broken",
+    "issue_type": "damaged_item"
+  },
+  {
+    "keyword": "damaged",
+    "issue_type": "damaged_item"
+  },
+  {
+    "keyword": "late",
+    "issue_type": "late_delivery"
+  },
+  {
+    "keyword": "not arrived",
+    "issue_type": "late_delivery"
+  },
+  {
+    "keyword": "missing",
+    "issue_type": "missing_item"
+  },
+  {
+    "keyword": "double charge",
+    "issue_type": "duplicate_charge"
+  },
+  {
+    "keyword": "charged twice",
+    "issue_type": "duplicate_charge"
+  },
+  {
+    "keyword": "wrong item",
+    "issue_type": "wrong_item"
+  },
+  {
+    "keyword": "not working",
+    "issue_type": "defective_product"
+  }
+]

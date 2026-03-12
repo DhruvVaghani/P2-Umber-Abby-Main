@@ -1,0 +1,174 @@
+[
+  {
+    "conversation_id": "P2-DEMO-001",
+    "turns": [
+      {
+        "role": "user",
+        "message": "I was charged twice for order ORD1003."
+      },
+      {
+        "role": "assistant",
+        "message": "Duplicate charge detected. Generating refund preview and requesting approval."
+      },
+      {
+        "role": "system",
+        "message": "[Approval required: refund_preview]"
+      },
+      {
+        "role": "assistant",
+        "message": "Approve the refund."
+      },
+      {
+        "role": "user",
+        "message": "Refund committed."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "duplicate_charge",
+      "order_id": "ORD1003",
+      "policy_citations": [
+        "chargeback_policy.md",
+        "refund_policy.md"
+      ],
+      "final_status": "refund_committed",
+      "approval_required": true
+    }
+  },
+  {
+    "conversation_id": "P2-DEMO-002",
+    "turns": [
+      {
+        "role": "user",
+        "message": "My speaker (ORD1002) arrived late. Can I get a refund?"
+      },
+      {
+        "role": "assistant",
+        "message": "Delay confirmed, preparing partial refund preview."
+      },
+      {
+        "role": "system",
+        "message": "[Approval required]"
+      },
+      {
+        "role": "assistant",
+        "message": "Approve partial refund."
+      },
+      {
+        "role": "user",
+        "message": "Partial refund committed."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "late_delivery",
+      "order_id": "ORD1002",
+      "policy_citations": [
+        "delivery_policy.md",
+        "refund_policy.md"
+      ],
+      "final_status": "refund_committed",
+      "approval_required": true
+    }
+  },
+  {
+    "conversation_id": "P2-DEMO-003",
+    "turns": [
+      {
+        "role": "user",
+        "message": "My watch from ORD1004 stopped working within 10 days."
+      },
+      {
+        "role": "assistant",
+        "message": "Warranty applies. Replacement proposal ready."
+      },
+      {
+        "role": "system",
+        "message": "[Approval required: replacement]"
+      },
+      {
+        "role": "assistant",
+        "message": "Approve replacement."
+      },
+      {
+        "role": "user",
+        "message": "Replacement authorized."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "warranty",
+      "order_id": "ORD1004",
+      "policy_citations": [
+        "warranty_policy.md"
+      ],
+      "final_status": "replacement_authorized",
+      "approval_required": true
+    }
+  },
+  {
+    "conversation_id": "P2-DEMO-004",
+    "turns": [
+      {
+        "role": "user",
+        "message": "Order ORD1005 is missing one sleeve."
+      },
+      {
+        "role": "assistant",
+        "message": "Partial refund preview prepared."
+      },
+      {
+        "role": "system",
+        "message": "[Approval required]"
+      },
+      {
+        "role": "assistant",
+        "message": "Approve."
+      },
+      {
+        "role": "user",
+        "message": "Partial refund committed."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "missing_item",
+      "order_id": "ORD1005",
+      "policy_citations": [
+        "refund_policy.md"
+      ],
+      "final_status": "refund_committed",
+      "approval_required": true
+    }
+  },
+  {
+    "conversation_id": "P2-DEMO-005",
+    "turns": [
+      {
+        "role": "user",
+        "message": "Refund for my 4K Monitor (ORD1011)."
+      },
+      {
+        "role": "assistant",
+        "message": "Within window. Refund preview ready."
+      },
+      {
+        "role": "system",
+        "message": "[Approval required]"
+      },
+      {
+        "role": "assistant",
+        "message": "Approve refund."
+      },
+      {
+        "role": "user",
+        "message": "Refund committed."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "refund_request",
+      "order_id": "ORD1011",
+      "policy_citations": [
+        "refund_policy.md"
+      ],
+      "final_status": "refund_committed",
+      "approval_required": true
+    }
+  }
+]
