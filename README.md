@@ -292,7 +292,7 @@ This response demonstrates the required **approval gate**: the refund is preview
 
 ### 2. API Output: Approved and Completed
 ![Approval JSON Output](api1.png)
-![Approval JSON Output](Screenshot 2026-03-12 181958.png)
+![Approval JSON Output](api2.png)
 
 
 The second JSON response shows the graph after `/runs/approve`.
