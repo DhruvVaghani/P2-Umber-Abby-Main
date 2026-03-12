@@ -322,7 +322,7 @@ This response demonstrates the required **interrupt -> resume -> commit** workfl
 
 ### 3. LangSmith Trace: Initial Run Until Approval
 ![LangSmith Initial Trace](langsmith1.png)
-![LangSmith Initial Trace](Screenshot 2026-03-12 181735.png)
+![LangSmith Initial Trace](langsmith2.png)
 
 The first LangSmith screenshot shows the run tree for the initial request before approval.
 
